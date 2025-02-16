@@ -1,0 +1,150 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+span{
+	color: #e614ff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 2.5em;
+	background: url("2.png") right center;
+	background-size: cover;
+}
+
+
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #c600ff;
+}
+
+/* Секции */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Турниры */
+#tournaments ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tournaments ul li {
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Команды */
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.team h3 {
+    margin-top: 0;
+}
+
+/* Контакты */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px;
+    background-color: #c600ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e614ff;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
