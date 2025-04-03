@@ -33,16 +33,6 @@ header h1 {
 	background-size: cover;
 }
 
-.gif-box{
-	display: flex;
-	justify-content: space-around;
-}
-
-.small-gif{
-	width: 20%;
-	margin: 0 auto;
-}
-
 header .container{
 	display: flex;
 	justify-content: space-between;
