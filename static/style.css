@@ -35,6 +35,7 @@ header h1 {
 
 .gif-box{
 	display: flex;
+	justify-content: space-around;
 }
 
 .small-gif{
