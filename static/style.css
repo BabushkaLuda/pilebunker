@@ -1,4 +1,9 @@
 /* Общие стили */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
