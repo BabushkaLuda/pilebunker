@@ -1,9 +1,5 @@
 /* Общие стили */
 
-::-webkit-scrollbar {
-  width: 20px;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,6 +10,22 @@ body {
 
 span{
 	color: #e614ff;
+}
+
+.simple_button{
+	font-size: 18px;
+	background-color: #222;
+	color: #e614ff;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	align-items: center;
+	border: none;
+	text-decoration: none;
+}
+
+.simple_button:hover{
+	background-color: #111;
 }
 
 .container {
