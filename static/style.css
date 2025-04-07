@@ -8,11 +8,11 @@ body {
 	color: #fff;
 }
 
-span{
+span {
 	color: #e614ff;
 }
 
-.simple_button{
+.simple_button {
 	font-size: 18px;
 	background-color: #222;
 	color: #e614ff;
@@ -24,7 +24,7 @@ span{
 	text-decoration: none;
 }
 
-.simple_button:hover{
+.simple_button:hover {
 	background-color: #111;
 }
 
@@ -50,7 +50,7 @@ header h1 {
 	background-size: cover;
 }
 
-header .container{
+header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -194,7 +194,7 @@ footer p {
 
 
 @media only screen and (max-width: 700px) {
-	header .container{
+	header .container {
 		flex-direction: column;
 	}
 	nav ul {
