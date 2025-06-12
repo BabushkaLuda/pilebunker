@@ -4,7 +4,7 @@ html {
 }
 
 header, #about, #tournaments, footer {
-	scroll-snap-align: start;
+	scroll-snap-align: start center;
 }
 
 body {
@@ -89,7 +89,11 @@ nav ul li a:hover {
 /* Секции */
 
 .section {
-	padding: 50px 0 0 0;
+	padding: 0 0 50px 0;
+}
+
+#contact {
+	padding: 0;
 }
 
 .section h2 {
