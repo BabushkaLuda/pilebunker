@@ -1,4 +1,13 @@
 /* Общие стили */
+html {
+	scroll-snap-type: y mandatory; /*proximity*/
+}
+
+header, #about, #tournaments, #contact {
+	scroll-snap-align: start;
+}
+
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -99,6 +108,11 @@ nav ul li a:hover {
 }
 
 /* Турниры */
+
+#tournaments {
+	min-height: 100vh;
+}
+
 #tournaments ul {
 	list-style: none;
 	padding: 0;
@@ -115,6 +129,11 @@ nav ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	min-height: 100vh;
+}
+
+#about {
+	min-height: 100vh;
 }
 
 .accordion {
@@ -144,7 +163,7 @@ nav ul li a:hover {
 	background-color: #333;
 	/* display: none; */
 	overflow: hidden;
-	/*overflow: auto;*/
+	overflow: auto;
 	transition: 0.4s;
 	margin-bottom: 10px;
 	border-radius: 5px;
@@ -153,7 +172,7 @@ nav ul li a:hover {
 }
 
 .panel.active {
-	max-height: 1200px;
+	max-height: 50vh;
 }
 
 .accordion:after {
@@ -208,7 +227,6 @@ footer p {
 	font-size: 1em;
 }
 
-
 @media only screen and (max-width: 700px) {
 	header .container {
 		flex-direction: column;
@@ -216,21 +234,5 @@ footer p {
 
 	nav ul {
 		margin-top: 20px;
-	}
-
-	html {
-	scroll-snap-type: y mandatory; /*proximity*/
-	}
-
-	header, #about, #tournaments, #contact {
-		scroll-snap-align: start;
-	}
-
-	#about, #tournaments {
-		height: 100vh;
-	}
-
-	#contact {
-		height: 100vh;
 	}
 }
