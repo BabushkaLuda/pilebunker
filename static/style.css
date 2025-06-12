@@ -80,7 +80,12 @@ nav ul li a:hover {
 }
 
 /* Секции */
+.sections_container {
+	scroll-snap-type: both mandatory;
+}
+
 .section {
+	scroll-snap-align: start;
 	padding: 50px 0;
 }
 
