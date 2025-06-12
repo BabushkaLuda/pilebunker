@@ -4,7 +4,7 @@ html {
 }
 
 header, #about, #tournaments, footer {
-	scroll-snap-align: start center;
+	scroll-snap-align: start;
 }
 
 body {
