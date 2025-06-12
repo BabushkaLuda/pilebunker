@@ -129,15 +129,21 @@ nav ul li a:hover {
 }
 
 .panel {
+	max-height: 0;
 	position: relative;
 	background-color: #333;
-	display: none;
+	/* display: none; */
 	overflow: hidden;
-	overflow: auto;
+	/*overflow: auto;*/
 	transition: 0.4s;
 	margin-bottom: 10px;
 	border-radius: 5px;
-	padding: 10px;
+	/*padding: 10px;*/
+	transition: max-height 0.4s ease;
+}
+
+.panel.active {
+	max-height: 1200px;
 }
 
 .accordion:after {
@@ -147,7 +153,7 @@ nav ul li a:hover {
 	margin-left: 5px;
 }
 
-.active:after {
+.accordion.active:after {
 	content: "\2B53";
 }
 
