@@ -1,4 +1,11 @@
 /* Общие стили */
+html {
+	scroll-snap-type: y mandatory; /*proximity*/
+}
+
+header, #about, #tournaments, footer {
+	scroll-snap-align: start;
+}
 
 body {
 	font-family: Arial, sans-serif;
@@ -80,13 +87,9 @@ nav ul li a:hover {
 }
 
 /* Секции */
-.sections_container {
-	scroll-snap-type: both mandatory;
-}
 
 .section {
-	scroll-snap-align: start;
-	padding: 50px 0;
+	padding: 50px 0 0 0;
 }
 
 .section h2 {
