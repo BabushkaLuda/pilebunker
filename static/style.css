@@ -1,12 +1,4 @@
 /* Общие стили */
-html {
-	scroll-snap-type: y mandatory; /*proximity*/
-}
-
-header, #about, #tournaments, footer {
-	scroll-snap-align: start;
-}
-
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -119,6 +111,12 @@ nav ul li a:hover {
 	border-radius: 5px;
 }
 
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .accordion {
 	font-size: 18px;
 	background-color: #333;
@@ -215,7 +213,24 @@ footer p {
 	header .container {
 		flex-direction: column;
 	}
+
 	nav ul {
 		margin-top: 20px;
+	}
+
+	html {
+	scroll-snap-type: y mandatory; /*proximity*/
+	}
+
+	header, #about, #tournaments, #contact {
+		scroll-snap-align: start;
+	}
+
+	#about, #tournaments {
+		height: 100vh;
+	}
+
+	#contact {
+		height: 100vh;
 	}
 }
