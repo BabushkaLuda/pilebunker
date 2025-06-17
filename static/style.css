@@ -229,23 +229,14 @@ footer p {
 }
 
 .scroll{
+	z-index: -1;
 	display: flex;
 	align-items: flex-end;
 	height: 300vh;
-	overflow: hidden;
 	position: absolute;
-	top: 155px;
 	right: 0;
-	margin: 0;
 	background-repeat: repeat-y;
 	background-position: center;
-}
-.scroll2{
-	position: relative;
-    left: 93vw;
-	bottom: 0;
-	width: 100px;
-	filter: hue-rotate(340deg);
 }
 
 @media only screen and (max-width: 700px) {
