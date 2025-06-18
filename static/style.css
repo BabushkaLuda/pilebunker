@@ -8,7 +8,6 @@ header, #about, #tournaments, #contact {
 	scroll-snap-align: start;
 }
 
-
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -88,14 +87,24 @@ nav ul li a:hover {
 	color: #c600ff;
 }
 
+.scroll{
+	z-index: -1;
+	display: flex;
+	align-items: flex-end;
+	height: 300vh;
+	position: absolute;
+	right: 0;
+	background-repeat: repeat-y;
+	background-position: center;
+	background-image: url('../media/arrows.gif');
+}
+
 /* Секции */
 
 .section {
+	min-height: 100vh;
+	max-height: 100vh;
 	padding: 0 0 50px 0;
-}
-
-#contact {
-	padding: 0;
 }
 
 .section h2 {
@@ -110,10 +119,6 @@ nav ul li a:hover {
 
 /* Турниры */
 
-#tournaments {
-	min-height: 100vh;
-}
-
 #tournaments ul {
 	list-style: none;
 	padding: 0;
@@ -124,17 +129,6 @@ nav ul li a:hover {
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 5px;
-}
-
-#contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 100vh;
-}
-
-#about {
-	min-height: 100vh;
 }
 
 .accordion {
@@ -188,6 +182,14 @@ nav ul li a:hover {
 }
 
 /* Контакты */
+
+#contact {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -228,17 +230,6 @@ footer p {
 	font-size: 1em;
 }
 
-.scroll{
-	z-index: -1;
-	display: flex;
-	align-items: flex-end;
-	height: 300vh;
-	position: absolute;
-	right: 0;
-	background-repeat: repeat-y;
-	background-position: center;
-}
-
 @media only screen and (max-width: 700px) {
 	html {
 		scroll-snap-type: y proximity; /*mandatory*/
@@ -251,7 +242,7 @@ footer p {
 	nav ul {
 		margin-top: 20px;
 	}
-	
+
 	.scroll{
 		display: none;
 	}
