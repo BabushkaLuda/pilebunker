@@ -22,7 +22,7 @@ span {
 
 .simple_button {
 	font-size: 18px;
-	background-color: #222;
+	/* background-color: #222; */
 	color: #e614ff;
 	padding: 10px;
 	border-radius: 5px;
@@ -30,10 +30,12 @@ span {
 	align-items: center;
 	border: none;
 	text-decoration: none;
+	background-size: cover;
 }
 
 .simple_button:hover {
-	background-color: #111;
+	/* background-color: #111; */
+	filter: brightness(110%);
 }
 
 .container {
@@ -227,6 +229,25 @@ footer {
 footer p {
 	margin: 0;
 	font-size: 1em;
+}
+
+#discord_img{
+	background-image: url(../media/discord.svg);
+	font-size: 0;
+	display: inline-block;
+	width: 10vw;
+	max-width: 100px;
+	height:10vw;
+	max-height: 100px;
+}
+#email_img{
+	background-image: url(../media/discord.svg);
+	font-size: 0;
+	display: inline-block;
+	width: 10vw;
+	max-width: 100px;
+	height:10vw;
+	max-height: 100px;
 }
 
 @media only screen and (max-width: 700px) {
